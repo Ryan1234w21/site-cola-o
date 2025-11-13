@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.menu{
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    height: 130px;
+    background-color: transparent;
+    z-index: 0;
+}
+
+
+.logo img {
+    width: 80px;
+}
+
+.nav-bar{
+    margin-right: 40px ;
+}
+
+.nav-bar a{
+    width: auto;
+    color: rgb(27, 1, 1);
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    height: auto;
+
+}
+
+.nav-bar a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+
+.bnt-prof {
+    color: black;
+    font-size: 16px;
+    background-color: transparent;
+    height: auto;
+    padding: 10px;
+    width: auto;
+    border: 2px solid black;
+}
+
+.bnt-prof:hover {
+    background-color: rgb(10, 10, 72);
+    color: white;
+    cursor: pointer;
+}
+
+
+.bnt-aluno {
+    color: black;
+    font-size: 16px;
+    background-color: transparent;
+    height: auto;
+    padding: 10px;
+    width: auto;
+    border: 2px solid black;
+}
+
+.bnt-aluno:hover {
+    background-color: rgb(10, 10, 72);
+    color: white;
+    cursor: pointer;
+}
+
+.carousel-container{
+   width: 100%;
+   overflow: hidden;
+   position:relative;
+}
+
+.carousel {
+    display: flex;
+    width: 400%;
+    animation: slide 10s infinite;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 700px;
+    flex-shrink:0;
+}
+
+.carousel-item img {
+    width: 1920px;
+    height: 700px;
+
+}
+
+@keyframes slide {
+    0% { transform: translate(0%);}
+    20% { transform: translate(0%);}
+
+    25% { transform: translate(-100%);}
+    45% { transform: translate(-100%);}
+
+    50% { transform: translate(-200%);}
+    70% { transform: translate(-200%);}
+
+    75% { transform: translate(-300%);}
+    95% { transform: translate(-300%);}
+
+    100% {transform: translate(0%);}
+}
+
+/* Carrosel */
+
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 200px;
+    background-color: rgb(10, 10, 72);
+}
